@@ -56,19 +56,47 @@
 /*************************/
 /**** Css del index  ******/
 /************************/
-header{
+header  {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    background-color:white ;
+    background-color:#f8f9fa ;
     position: sticky;
     top: 40px;
-    z-index: 600;
-    
+    z-index: 800;
+   
+    }
+    .centrar-nav {
+      display: flex;
+      justify-content: space-around;
+      position: sticky;
+      top: 40px;
+      z-index: 600;
 
+    }
+    .Icono-whatsApp {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: sticky;
+        top: 50%;
+        margin-right: 10%;
+        z-index: 10;
+       
+    }
+
+    /*********************************************************/
+    /******* TAMAÑO ADAPTADO DE CARRUSEL E IMAGEN ***********/
+    /*********************************************************/
+    .altura-item {
+      height: 500px; /* Altura del contenedor*/
+    }
+    
+    .altura-img {
+      height: 100%; /*Ocuparf el 100% del alto del contenedor */
+      object-fit: cover; /* Redimencionar */
+    }
     
    
-}
+
 header nav{
    width: 100%;
 }
