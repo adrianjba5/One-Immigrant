@@ -64,6 +64,7 @@ header{
     position: sticky;
     top: 40px;
     z-index: 600;
+    
 
     
    
@@ -93,6 +94,12 @@ header a{
     height: 10vh;
     margin: .2em;
     
+ }
+
+ .centrar-nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: baseline;
  }
  
    /************************/
