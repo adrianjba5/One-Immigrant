@@ -53,9 +53,9 @@
 .txt-400{
    font-weight: 400;
 }
-/*************************/
+/**************************/
 /**** Css del index  ******/
-/************************/
+/**************************/
 header  {
     list-style-type: none;
     background-color:#f8f9fa ;
@@ -131,7 +131,7 @@ header a{
  }
  
    /************************/
-   /*** Setcion Nosotros ***/
+   /*** Section Nosotros ***/
    /************************/
 
 #sobremi {
@@ -268,8 +268,103 @@ header a{
          box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
      }
      
-     
+     /*******************************/
+     /******Section Noticias********/
+     /******************************/
 
+     .noticias{
+        display: flex;
+        justify-content: center;
+      
+        min-height: 100vh;
+        padding: 30px 15px;
+     }
+     .content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+     }
+
+     .post-img-1{
+        background: url(img/parole-servicios.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: top;
+        transition: .2s;
+     }
+
+    
+     .post-img-2{
+        background: url(img/ciudadania.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: top;
+        transition: .2s;
+     }
+     .post-img-3{
+        background: url(img/cita.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+     }
+     .post{
+        box-shadow: 0px 1px 6px #565656;
+        overflow: hidden;
+        transition: .2s;
+     }
+     .post:hover{
+        transform: translateY(-4px);
+        box-shadow: 0px 3px 10px #565656;
+        
+     }
+     .post-header{
+        width: 100%;
+        
+        overflow: hidden;
+        cursor: pointer;
+     }
+     .post:hover .post-img-1,
+     .post:hover .post-img-2,
+     .post:hover .post-img-3 {
+        transform: scale(1.1);
+     }
+     .post-body{
+        padding: 15px;
+        text-align: center;
+     }
+     .post-body span{
+        display: inline-block;
+        color: #999;
+        margin-bottom: 10px;
+     }
+     .post-body h2{
+        margin-bottom: 15px;
+     }
+     .post-body p{
+        margin-bottom: 20px;
+     }
+     .post-body a{
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        color: #000;
+        border: 1px solid #000;
+        margin-top: 30px;
+        transition: .5s;
+     }
+     .post-body a:hover{
+        background-color: #0072bc;
+        color: #fff;
+     }
+
+   
 
           /****************************/
           /*** Section Contacto Css ***/
@@ -375,10 +470,11 @@ header a{
      
         header{
          position: sticky;
-         top: 55px;
+         top: 60px;
        }
-      
+      /********************/
       /* Setcion nosotros */
+      /********************/
       #sobremi {
           padding: 50px 0;
           display: block;
@@ -397,7 +493,9 @@ header a{
           font-size: 25px;
           text-align: center;
       }
-      /* seccion MIS SERVICIOS */
+      /*************************/
+      /* Section MIS SERVICIOS */
+      /*************************/
       #servicios {
           padding: 50px 15px;
       }
@@ -411,7 +509,11 @@ header a{
      
       /* seccion CONTACTO */
       #contacto {
-          padding: 50px 15px;
+          padding: 0px 15px;
+          
+      }
+      .contenedor-form{
+        min-width: 80%;
       }
       #contacto .contenedor-form .mitad {
           margin-bottom: 15px;
@@ -421,4 +523,8 @@ header a{
           width: 100%;
           margin-bottom: 15px;
       }
+      /*************************/
+      /* Section Noticias ******/
+      /*************************/
+      
   }

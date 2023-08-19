@@ -1,0 +1,25 @@
+Gradientes
+• https://cssgradient.io/
+• https://mycolor.space
+
+
+Animaciones y transiciones 
+• https://animate.style/ (animación de texto)
+• https://michalsnik.github.io/aos/ (animaciones de div)
+• https://animista.net/
+•
+
+
+Efectos visuales/texturas
+• https://getwaves.io/
+• https://blush.design/es
+• https://uiverse.io/
+• https://fotorama.io/
+• https://app.haikei.app/
+https://cssgenerator.org/
+
+
+Iconos/vectores
+• https://icon-icons.com/
+• https://undraw.co/
+• https://tablericons.com/
