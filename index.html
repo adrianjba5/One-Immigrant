@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="img/ico" href="img/icono.ico">
-	
 	<script src="https://kit.fontawesome.com/ee7ceee145.js" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
 	crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="codigo.js">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title> One Immigrant - Tramites Migratorios MIAMI</title>
 </head>
 <body>
@@ -121,10 +122,12 @@
 	
 			<!-- SECTION NOSOTROS  -->
 		<section id="sobremi">
-			<div class="contenedor-foto">
+			<div class="contenedor-foto" data-aos="fade-right"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine">
 				<img src="img/foto-presentacion.jpg" alt="">
 			</div>
-			<div class="sobremi">
+			<div class="sobremi" data-aos="fade-left">
 				<p class="titulo-seccion">NOSOTROS</p>
 				<h2><span>ONE IMMIGRANT</span> </h2>
 				<h3> Somos Especialista en Aplicaciones Migratorias </h3>
@@ -138,43 +141,77 @@
 				   <section id="servicios">
 					<h3 class="titulo-seccion">SERVICIOS</h3>						
 					<div class="fila">
-						<div class="servicio">
+						<div class="servicio" data-aos="zoom-in-down">
 							<img src="img/parole-servicios.jpg" alt="Asilo">
 						</div>
 		
-						<div class="servicio">
+						<div class="servicio" data-aos="zoom-in-down">
 							<img src="img/ciudadania.jpg" alt="Asilo">
 						</div>
-						<div class="servicio">
+						<div class="servicio" data-aos="zoom-in-down">
 							<img src="img/cita.jpg" alt="Asilo">
 						</div>
 					</div>
 					<div class="fila">
-						<div class="servicio">
+						<div class="servicio" data-aos="zoom-in-down">
 							<img src="img/permiso-de-trabajo.jpg" alt="Asilo">
 						</div>
 		
-							<div class="servicio">
+							<div class="servicio" data-aos="zoom-in-down"">
 								<img src="img/asilo.jpg" alt="Asilo">
 							</div>
 		
-						<div class="servicio">
+						<div class="servicio" data-aos="zoom-in-down"">
 							<img src="img/formulario-cubanos.jpg" alt="Asilo">
 						</div>
 					</div>
 				</section>
 	
 	     <section>
-	<!-- <div><h3>NOTICIAS</h3></p>
-			<img src="img/parole.jpg" alt="">
-			<div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Eveniet praesentium unde deserunt deleniti dolor impedit a 
-				commodi nobis nihil ratione similique mollitia ut quaerat qui
-				 earum amet, eius possimus. Natus!</p>
+			<section class="noticias">
+				<div class="content" >
+					<article class="post" data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine">
+						<div class="post-header">
+							<div class="post-img-1">
+							</div>
+							<div class="post-body">
+								<span>5 agosto 2023 | Noticias</span>
+								<h2>Parol Humanitario</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error, saepe similique cum, officiis facilis eaque ullam quis rerum, molestias inventore magnam doloremque architecto velit.</p>
+								<a href="#" >Leer mas...</a>
+							</div>
+						</div>
+					</article>
+					<article class="post" data-aos="zoom-in">
+						<div class="post-header">
+							<div class="post-img-2">
+							</div>
+							<div class="post-body">
+								<span>12 agosto 2023 | Noticias</span>
+								<h2>Parol Humanitario</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error, saepe similique cum, officiis facilis eaque ullam quis rerum, molestias inventore magnam doloremque architecto velit.</p>
+								<a href="#" class="post-link">Leer mas...</a>
+							</div>
+						</div>
+					</article>
+					<article class="post" data-aos="fade-left"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine">
+						<div class="post-header">
+							<div class="post-img-3">
+							</div>
+							<div class="post-body">
+								<span>23 agosto 2023 | Noticias</span>
+								<h2>Parol Humanitario</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error, saepe similique cum, officiis facilis eaque ullam quis rerum, molestias inventore magnam doloremque architecto velit.</p>
+								<a href="#" class="post-link">Leer mas...</a>
+							</div>
+						</div>
+					</article>
 				</div>
-	</div>
-		
-	</section> -->
+			</section>
 	<section id="contacto">
 		<h3 class="titulo-seccion">Contactanos ahora</h3>
 		<div class="contenedor-form">
@@ -209,5 +246,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
 crossorigin="anonymous"></script>
+
+	<script>AOS.init();
+  </script>
 </body>
 </html>
