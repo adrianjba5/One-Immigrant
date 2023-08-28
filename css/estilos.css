@@ -1,5 +1,462 @@
-body {
-  color: aqua;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+/*************************/
+/*** Css Del TopHEADER ***/
+/*************************/
+.topheader {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background: #0072bc;
+  text-decoration: none;
+  padding: 0.5em;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+.topheader a, .topheader .headertopright {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+.topheader a .txt-400, .topheader .headertopright .txt-400 {
+  font-weight: 400;
+}
+.topheader .headertopleft {
+  width: 50%;
+  float: left;
+  padding-left: 15px;
+}
+.topheader .headertopright {
+  width: 50%;
+  float: right;
+  text-align: right;
+  padding-right: 15px;
+}
+.topheader .header-info {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1;
+  top: -1px;
+  margin-right: 7px;
+  margin-left: 5px;
+}
+
+/**************************/
+/**** Css del index  ******/
+/**************************/
+header {
+  list-style-type: none;
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 40px;
+  z-index: 800;
+}
+header nav {
+  width: 100%;
+}
+header ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.centrar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  position: sticky;
+  top: 40px;
+  z-index: 600;
+}
+
+.Icono-whatsApp {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: sticky;
+  top: 50%;
+  margin-right: 10%;
+  z-index: 10;
+}
+
+/************************************************/
+/* TAMAÑO ADAPTADO DE CARRUSEL E IMAGEN *********/
+/************************************************/
+.altura-item {
+  height: 500px; /* Altura del contenedor*/
+}
+
+.altura-img {
+  height: 100%; /*Ocuparf el 100% del alto del contenedor */
+  object-fit: cover; /* Redimencionar */
+}
+
+/****************************/
+/*** Section F O O T E R ***/
+/***************************/
+footer {
+  background-color: #2c3f69;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+footer a, footer .topheader .headertopright, .topheader footer .headertopright {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  font-size: 26px;
+}
+footer i:hover {
+  color: #fff;
+  background-color: #0072bc;
+  border-radius: 5px;
+}
+
+/*************************/
+/****** Css Nosotros *****/
+/*************************/
+#sobremi {
+  max-width: 90%;
+  margin: auto;
+  padding: 100px 15px;
+  color: #111135;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-foto {
+  width: 600px;
+  margin-right: 0px;
+}
+.contenedor-foto img {
+  border: 1px solid;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+  margin: 0 20px;
+}
+#sobremi .sobremi .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration: none;
+}
+#sobremi .sobremi h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+#sobremi .sobremi h2 span {
+  color: #2c3f69;
+}
+#sobremi .sobremi h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#sobremi .sobremi p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+#sobremi .sobremi a, #sobremi .sobremi .topheader .headertopright, .topheader #sobremi .sobremi .headertopright {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+#sobremi .sobremi a:hover, #sobremi .sobremi .topheader .headertopright:hover, .topheader #sobremi .sobremi .headertopright:hover {
+  background-color: #0072bc;
+  color: #fff;
+}
+
+/**********************/
+/**** Css Servicios****/
+/**********************/
+#servicios {
+  padding: 100px 15px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+#servicios .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration: none;
+}
+#servicios .fila {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 30px auto;
+}
+#servicios .fila .servicio {
+  max-width: 350px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#servicios .fila .servicio img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+#servicios .fila .servicio .servicio:hover {
+  box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+/***********************/
+/** Css Noticias *******/
+/***********************/
+.noticias {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.content .post {
+  box-shadow: 0px 1px 6px #565656;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.content .post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 3px 10px #565656;
+}
+
+.post-header {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.post-header .post-img-1 {
+  background: url(../../img/parole-servicios.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  transition: 0.2s;
+}
+.post-header .post-img-2 {
+  background: url(../../img/ciudadania.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  transition: 0.2s;
+}
+.post-header .post-img-3 {
+  background: url(../../img/cita.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.2s;
+}
+
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3 {
+  transform: scale(1.1);
+}
+
+.post-body {
+  padding: 15px;
+  text-align: center;
+}
+.post-body span {
+  display: inline-block;
+  color: #999;
+  margin-bottom: 10px;
+}
+.post-body h2 {
+  margin-bottom: 15px;
+}
+.post-body p {
+  margin-bottom: 20px;
+}
+.post-body a, .post-body .topheader .headertopright, .topheader .post-body .headertopright {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  color: #000;
+  border: 1px solid #000;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.post-body a:hover, .post-body .topheader .headertopright:hover, .topheader .post-body .headertopright:hover {
+  background-color: #0072bc;
+  color: #fff;
+}
+
+/****************/
+/* Css Contacto*/
+/***************/
+#contacto {
+  padding: 100px 15px;
+  background-color: #f3f3f3;
+}
+#contacto .titulo-seccion {
+  margin-bottom: 20px;
+}
+#contacto .contenedor-form {
+  max-width: 50%;
+  margin: auto;
+}
+#contacto .contenedor-form .fila {
+  margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+#contacto .contenedor-form input, #contacto .contenedor-form .textarea {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #919191;
+  resize: none;
+}
+#contacto .contenedor-form .mitad input, #contacto .contenedor-form .mitad .textarea {
+  width: 48%;
+}
+#contacto .contenedor-form .input-full {
+  width: 100%;
+}
+#contacto .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration: none;
+}
+#contacto .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 15px;
+}
+#contacto .btn-enviar:hover {
+  background-color: #0072bc;
+  color: #fff;
+}
+
+/********************/
+/* Css Responsive****/
+/********************/
+@media screen and (max-width: 800px) {
+  header {
+    position: sticky;
+    top: 60px;
+  }
+  /********************/
+  /* Setcion nosotros */
+  /********************/
+  #sobremi {
+    padding: 50px 0;
+    display: block;
+  }
+  #sobremi .contenedor-foto {
+    max-width: 200px;
+    margin: auto;
+  }
+  #sobremi .contenedor-foto img {
+    padding: 8px;
+  }
+  #sobremi .sobremi .titulo-seccion {
+    text-align: center;
+  }
+  #sobremi .sobremi h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  /*************************/
+  /* Section MIS SERVICIOS */
+  /*************************/
+  #servicios {
+    padding: 50px 15px;
+  }
+  #servicios .fila {
+    display: block;
+  }
+  #servicios .fila .servicio {
+    margin: 10px auto;
+  }
+  /* seccion CONTACTO */
+  #contacto {
+    padding: 0px 15px;
+  }
+  .contenedor-form {
+    min-width: 80%;
+  }
+  .contenedor-form .mitad {
+    margin-bottom: 15px;
+    display: block;
+  }
+  .contenedor-form .mitad input, #contacto .contenedor-form .mitad .textarea {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /*************************/
+  /* Section Noticias ******/
+  /*************************/
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .post-header {
+    max-width: 500px;
+    padding-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

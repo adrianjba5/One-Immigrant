@@ -1,3 +1,8 @@
-body{
-    color: aqua;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import "partials/index.scss";
+@import "partials/nosotros.scss";
+@import "partials/servicios.scss";
+@import "partials/noticias.scss";
+@import "partials/contactos.scss";
+@import "variables.scss";
+@import "partials/responsive";

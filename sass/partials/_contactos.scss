@@ -1,1 +1,63 @@
+/****************/
+/* Css Contacto*/ 
+/***************/
 // Solo estilo Contaco
+#contacto {
+         
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+    .titulo-seccion {
+        margin-bottom: 20px;
+    }
+    .contenedor-form {
+        max-width: 50%;
+        margin: auto;
+        .fila {
+            margin-bottom: 15px;
+        }
+        .mitad {
+            display: flex;
+            justify-content: space-between;
+        }
+        input{
+                padding: 20px;
+                border-radius: 5px;
+                border: none;
+                border: 1px solid #919191;
+                resize: none;
+            }
+        .textarea{
+            @extend input
+            }
+            .mitad input {
+                width: 48%;
+            }
+            .input-full {
+                width: 100%;
+            }
+
+    }
+    .titulo-seccion {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration: none;
+        
+    }
+    .btn-enviar {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px ;
+    }
+    .btn-enviar:hover {
+        background-color: #0072bc;
+        color: #fff;
+    }
+
+
+    
+}

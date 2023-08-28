@@ -1,1 +1,94 @@
+/***********************/
+/** Css Noticias *******/
+/***********************/
+
 // Solo estilos Noticias
+
+.noticias{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+ }
+ .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    .post{
+        box-shadow: 0px 1px 6px #565656;
+        overflow: hidden;
+        transition: .2s;
+     }
+     .post:hover{
+        transform: translateY(-4px);
+        box-shadow: 0px 3px 10px #565656;
+        
+     }
+ }
+ 
+ .post-header{
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    .post-img-1{
+      background: url(../../img/parole-servicios.jpg);
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: top;
+      transition: .2s;
+   }
+   .post-img-2{
+      background: url(../../img/ciudadania.jpg);
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: top;
+      transition: .2s;
+   }
+   .post-img-3{
+      background: url(../../img/cita.jpg);
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      transition: .2s;
+   }
+ }
+ .post:hover .post-img-1,
+     .post:hover .post-img-2,
+     .post:hover .post-img-3 {
+        transform: scale(1.1);
+     }
+
+     .post-body{
+        padding: 15px;
+        text-align: center;
+        span{
+            display: inline-block;
+            color: #999;
+            margin-bottom: 10px;
+         }
+         h2{
+            margin-bottom: 15px;
+         }
+         p{
+            margin-bottom: 20px;
+         }
+         a{
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            color: #000;
+            border: 1px solid #000;
+            margin-top: 30px;
+            transition: .5s;
+         }
+         a:hover{
+            background-color: #0072bc;
+            color: #fff;
+         }
+     }
