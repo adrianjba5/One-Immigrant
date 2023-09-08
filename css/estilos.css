@@ -7,6 +7,14 @@
   font-family: "Montserrat";
 }
 
+h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
 .Icono-whatsApp {
   display: flex;
   justify-content: flex-end;
@@ -128,6 +136,14 @@ footer i:hover {
 /*************************/
 /****** Css Nosotros *****/
 /*************************/
+h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
 #sobremi {
   max-width: 90%;
   margin: auto;
@@ -201,6 +217,14 @@ footer i:hover {
 /**********************/
 /**** Css Servicios****/
 /**********************/
+h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
 #servicios {
   padding: 100px 15px;
   text-align: center;
@@ -211,7 +235,6 @@ footer i:hover {
   font-size: 22px;
   text-transform: uppercase;
   color: #111135;
-  text-decoration: underline;
   text-decoration: none;
 }
 #servicios .fila {
@@ -243,6 +266,20 @@ footer i:hover {
 /***********************/
 /** Css Noticias *******/
 /***********************/
+#noticias {
+  padding: 100px 15px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+#noticias .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: none;
+  padding: 25px;
+}
+
 .noticias {
   display: flex;
   justify-content: center;

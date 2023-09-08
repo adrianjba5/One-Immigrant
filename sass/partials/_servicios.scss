@@ -1,6 +1,15 @@
 /**********************/
 /**** Css Servicios****/
 /**********************/
+h1{
+    
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration: none;
+     
+}
 
 #servicios {
     padding: 100px 15px;
@@ -11,7 +20,6 @@
         font-size: 22px;
         text-transform: uppercase;
         color: #111135;
-        text-decoration: underline;
         text-decoration: none;
     }
     .fila {

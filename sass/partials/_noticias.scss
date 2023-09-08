@@ -3,6 +3,20 @@
 /***********************/
 
 // Solo estilos Noticias
+#noticias{
+      padding: 100px 15px;
+      text-align: center;
+      background-color: #f3f3f3;
+      .titulo-seccion {
+          text-align: center;
+          font-size: 22px;
+          text-transform: uppercase;
+          color: #111135;
+          text-decoration: none;
+          padding: 25px;
+         
+      }
+}
 
 .noticias{
     display: flex;
